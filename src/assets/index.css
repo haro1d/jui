@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#home{
+    width: 72%;
+    height: 100%;
+    transform: translateX(-50%);
+    position: absolute;
+    left:50%;
+    overflow-y: hidden;
+}
+.head{
+    height: 6vh;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    padding: 12px;
+}
+.main{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+}
+.left{
+    width: 180px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.right{
+    padding: 20px 0 0 68px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.left ul{
+    list-style: none;
+}
+.left .li_title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.left .li_subTitle{
+    font-size: 14px;
+    font-weight: 300;
+    margin:8px 0
+}
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.size_28{
+    font-size:28px
+}
+.size_22{
+    font-size:22px
+}
+.mainBorder{
+    border:1px solid rgb(228, 228, 228);
+    padding:20px
+}
+.margin_4_0{
+    margin:4px 0
+}
+.margin_26_0_16{
+    margin:26px 0 16px
+}
+.hide_show{
+    text-align: center;
+    line-height: 32px;
+    width:100%;
+    height:32px;
+    background-color: #fff;
+    cursor: pointer;
+    border:1px solid rgb(228, 228, 228);
+    border-top:0
+}
+.hide_show:hover{
+    /* background-color: rgb(243, 243, 243); */
+    background-image: linear-gradient(rgb(238, 238, 238),#fff);
+}
+.hide_show_in{
+    font-size: 12px;
+    margin-left:34px;
+    transition:  0.4s;
+    /* display: none; */
+    opacity: 0;
+}
+.hide_show:hover .hide_show_in{
+    margin-left:0;
+    display:inline-block;
+    opacity: 1;   
+}
+.hide_show:hover .edg1{
+    position: relative;
+    left:-6px
+}
+.edg1{
+    transition: 0.4s;
+    width: 0px;height: 0px;
+    border-top:    6px solid transparent;
+    border-left:   6px solid transparent;
+    border-right:  6px solid transparent;
+    border-bottom: 6px solid gray;
+    margin-left:8px;
+    cursor: pointer;
+    position: relative;
+    top:-2px;
+    left:34px;
+    display: inline-block;
+}
+/* .edg2{
+    width: 0px;height: 0px;
+    border-top:    6px solid gray;
+    border-left:   6px solid transparent;
+    border-right:  6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin-left:8px;
+    cursor: pointer;
+    position: relative;
+    top:14px;
+    left:-6px
+} */
+.edg2{
+    transform:rotate(180deg);
+    position: relative;
+    top:4px;
+}
+.textBox{
+    max-height:0;
+    overflow:hidden;
+    transition: 0.3s;
+}
+.textBox2{
+    max-height:1000px
+}
