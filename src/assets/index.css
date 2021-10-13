@@ -44,12 +44,13 @@ body{
 .left .li_title{
     font-weight: 600;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .left .li_subTitle{
     font-size: 14px;
     font-weight: 300;
-    margin:8px 0
+    margin:12px 0;
+    cursor:pointer
 }
 ::-webkit-scrollbar {
     /*滚动条整体样式*/
@@ -65,18 +66,20 @@ body{
 }
 .mainBorder{
     border:1px solid rgb(228, 228, 228);
-    padding:20px
+    padding:20px;
+    width: 90%;
 }
 .margin_4_0{
-    margin:4px 0
+    margin:8px 0;
+    font-size: 14px;
 }
 .margin_26_0_16{
-    margin:26px 0 16px
+    margin:40px 0 16px
 }
 .hide_show{
     text-align: center;
     line-height: 32px;
-    width:100%;
+    width:calc(90% + 40px);
     height:32px;
     background-color: #fff;
     cursor: pointer;
@@ -138,7 +141,28 @@ body{
     max-height:0;
     overflow:hidden;
     transition: 0.3s;
+    width:calc(90% + 40px);
 }
 .textBox2{
     max-height:1000px
+}
+.h-table{
+    margin:28px 0 60px;
+}
+.attr{
+    font-family:KaiTi;
+    color: gray;
+}
+.inputStyle{
+    cursor: pointer;
+    padding: 10px 12px;
+    outline: none;
+    border:1px solid rgb(184, 184, 184);
+    border-radius: 4px;
+}
+.inputStyle:focus{
+    border: 1px solid rgb(0, 184, 46);
+}
+.inputStyle::placeholder {
+    color: rgb(184, 184, 184);
 }

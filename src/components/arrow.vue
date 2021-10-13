@@ -8,7 +8,9 @@
             </span>  
         </div>
         <div class="textBox" :class="[show?'':'textBox2']">
-            <pre v-highlightjs="code"><code class="html"></code></pre>
+            <!-- <pre v-highlightjs="code"><code class="html"></code></pre> -->
+            <pre v-highlightjs="code.html"><code class="html" v-if="code.html"></code></pre>
+            <pre v-highlightjs="code.javascript" v-if="code.javascript"><code class="javascript"></code></pre>
         </div>
     </div>
     
@@ -18,7 +20,7 @@
         name:'arrow',
         props:{
             code: {
-                type: String,
+                type: [Object,String],
                 // required: true,
                 },
         },

@@ -241,5 +241,28 @@ export default {
         font-size: 12px;
     }
 
-
+    .hButton-text1{
+        padding:0;
+        color: #f0b207;
+        background: transparent;
+        border: none;
+        margin-left: 20px;
+        &:hover,
+        &:focus{
+            color: #eecd15;
+            background: transparent;
+        }
+    }
+    .hButton-text2{
+        padding:0;
+        color: #2f97ff;
+        background: transparent;
+        border: none;
+        margin-left: 20px;
+        &:hover,
+        &:focus{
+            color: #66b1ff;
+            background: transparent;
+        }
+    }
 </style>

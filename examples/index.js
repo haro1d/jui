@@ -1,7 +1,8 @@
-import hButton from './button/button.vue'
-import hInput from './input/input.vue'
+import HButton from './button/button.vue'
+import HInput from './input/input.vue'
+import HTable from './table/table.vue'
 
-const components = [hButton,hInput]
+const components = [HButton,HInput,HTable]
 export default{
     install:(app,options)=>{
         components.forEach((item)=>{

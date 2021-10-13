@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <input type="text" v-model="x"></input>
-    </div>
+        <input type="text"  v-bind="$attrs" class="inputStyle"></input>
 </template>
 <script>
     export default {
         name: 'HInput',
         data() {
             return {
-                x:'测试的输入框'
             }
         },
     }

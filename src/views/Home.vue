@@ -36,7 +36,7 @@ export default {
             {
               id:1-1,
               label:'安装',
-              path:''
+              path:'/components'
             },
           ]
         },
@@ -46,12 +46,12 @@ export default {
           children:[
             {
               id:2-1,
-              label:'按钮',
+              label:'button 按钮',
               path:'/components/button'
             },
             {
               id:2-2,
-              label:'输入框',
+              label:'input 输入框',
               path:'/components/input'
             }
           ]

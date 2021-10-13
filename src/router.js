@@ -16,6 +16,11 @@ export default new Router({
       component: Home,
       children:[
         {
+          path:'/',
+          name:'start',
+          component: () => import('./views/start.vue')
+        },
+        {
           path: '/components/button',
           name: 'button',
           // route level code-splitting
