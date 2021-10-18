@@ -166,3 +166,7 @@ body{
 .inputStyle::placeholder {
     color: rgb(184, 184, 184);
 }
+.selectedRoute{
+    color:rgb(240, 156, 0);
+
+}

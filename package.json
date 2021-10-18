@@ -1,11 +1,14 @@
 {
   "name": "jui0",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "main": "lib/jui0.umd.min.js",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name jui0 --dest lib examples/index.js"
   },
+  "files":["lib"],
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",

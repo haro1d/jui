@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="head">
-      <h1>-UI</h1>
+      <h1 @click="test">-UI</h1>
     </div>
     <div class="main">
       <div class="left">
@@ -9,7 +9,8 @@
           <li v-for="(item,index) in menuList" :key="item.id" class="li_title" >
             {{item.label}}
             <ul >
-              <li v-for="(item2,index2) in item.children" :key="item2.id" class="li_subTitle" @click="$router.push(item2.path)">
+              <li v-for="(item2,index2) in item.children" :key="item2.id" class="li_subTitle" @click="$router.push(item2.path)" :class="[$route.path === item2.path?'selectedRoute':'']"
+              >
                 {{item2.label}}
               </li>
             </ul>
@@ -58,7 +59,13 @@ export default {
         }
       ]
     }
+  },
+  methods:{
+    test(){
+      console.log('t',this.$route)
+    }
   }
+  
 }
 </script>
 <style scoped>

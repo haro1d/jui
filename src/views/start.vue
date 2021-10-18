@@ -20,17 +20,16 @@
                 code1:{
                     html:
         `
-        npm i element-ui -S
+        npm i jui0 -S
         `
                 },
                 code2:{
                     javascript:
         `
-        import Vue from 'vue'
-        import ConjeeUi from 'conjee-ui'
-        import App from './App.vue'
+        import jui from 'jui0'
+        import "jui0/lib/jui0.css"
 
-        Vue.use(ConjeeUi)
+        Vue.use(jui)
 
         new Vue({
             el: '#app',
